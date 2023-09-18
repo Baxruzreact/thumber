@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="./css/style.css"
+        />
+    </head>
+
+    <body>
+        <div class="global">
+            <div class="header">
+                <header>
+                    <nav>
+                        <ul>
+                            <li class="logo">
+                                <a href="./index.html">thumber</a>
+                            </li>
+                            <li class="menu">
+                                <a href="#">
+                                    &#9776 menu
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+            <div class="graybg"></div>
+            <div class="main">
+                <main>
+                    <div class="mymenubar">
+                        <ul>
+                            <li class="close">
+                                <a href="#">×</a>
+                            </li>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Photos</a>
+                            </li>
+                            <li>
+                                <a href="#">About Me</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="my-modal">
+
+
+                        <!-- The Modal -->
+                        <div
+                            id="myModal"
+                            class="modal"
+                        >
+                            <span class="close">&times;</span>
+                            <img
+                                class="modal-content"
+                                id="img01"
+                                alt='modal1'
+                            >
+                            <div id="caption"></div>
+                        </div>
+
+                    </div>
+                    <div class="conatiner">
+                        <div class="slidercont">
+                            <div class="my-slides">
+                                <img
+                                    src="./images/img_1.jpg"
+                                    style="width:100%"
+                                    alt='1'
+                                />
+                            </div>
+                            <div class="my-slides">
+                                <img
+                                    src="./images/img_2.jpg"
+                                    style="width:100%"
+                                    alt='2'
+                                />
+                            </div>
+                            <div class="my-slides">
+                                <img
+                                    src="./images/img_3.jpg"
+                                    style="width:100%"
+                                    alt='3'
+                                />
+                            </div>
+                            <div class="my-slides">
+                                <img
+                                    src="./images/img_4.jpg"
+                                    style="width:100%"
+                                    alt='4'
+                                />
+                            </div>
+                            <div class="my-slides">
+                                <img
+                                    src="./images/img_5.jpg"
+                                    style="width:100%"
+                                    alt='5'
+                                />
+                            </div>
+                            <div class="my-slides">
+                                <img
+                                    src="./images/img_6.jpg"
+                                    style="width:100%"
+                                    alt='6'
+                                />
+                            </div>
+                            <div class="my-slides">
+                                <img
+                                    src="./images/img_7.jpg"
+                                    style="width:100%"
+                                    alt='7'
+                                />
+                            </div>
+                            <div class="my-slides">
+                                <img
+                                    src="./images/img_8.jpg"
+                                    style="width:100%"
+                                    alt='8'
+                                />
+                            </div>
+                            <div class="my-slides">
+                                <img
+                                    src="./images/img_9.jpg"
+                                    style="width:100%"
+                                    alt='9'
+                                />
+                            </div>
+                            <div class="my-slides">
+                                <img
+                                    src="./images/img_10.jpg"
+                                    style="width:100%"
+                                    alt='10'
+                                />
+                            </div>
+                            <a
+                                class="prev"
+                                onclick="plusSlides(-1)"
+                            >&#10094;</a>
+                            <a
+                                class="next"
+                                onclick="plusSlides(1)"
+                            >&#10095;</a>
+                            <a class='info'>info</a>
+                            <a class='zoom'>zoom</a>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img
+                                    class="demo cursor"
+                                    src="images/img_1.jpg"
+                                    onclick="currentSlide(1)"
+                                    alt="1"
+                                />
+                            </div>
+                            <div class="column">
+                                <img
+                                    class="demo cursor"
+                                    src="images/img_2.jpg"
+                                    onclick="currentSlide(2)"
+                                    alt="2"
+                                />
+                            </div>
+                            <div class="column">
+                                <img
+                                    class="demo cursor"
+                                    src="images/img_3.jpg"
+                                    onclick="currentSlide(3)"
+                                    alt="3"
+                                />
+                            </div>
+                            <div class="column">
+                                <img
+                                    class="demo cursor"
+                                    src="images/img_4.jpg"
+                                    onclick="currentSlide(4)"
+                                    alt="4"
+                                />
+                            </div>
+                            <div class="column">
+                                <img
+                                    class="demo cursor"
+                                    src="images/img_5.jpg"
+                                    onclick="currentSlide(5)"
+                                    alt="5"
+                                />
+                            </div>
+                            <div class="column">
+                                <img
+                                    class="demo cursor"
+                                    src="images/img_6.jpg"
+                                    onclick="currentSlide(6)"
+                                    alt="6"
+                                />
+                            </div>
+                            <div class="column">
+                                <img
+                                    class="demo cursor"
+                                    src="images/img_7.jpg"
+                                    onclick="currentSlide(7)"
+                                    alt="7"
+                                />
+                            </div>
+                            <div class="column">
+                                <img
+                                    class="demo cursor"
+                                    src="images/img_8.jpg"
+                                    onclick="currentSlide(8)"
+                                    alt="8"
+                                />
+                            </div>
+                            <div class="column">
+                                <img
+                                    class="demo cursor"
+                                    src="images/img_9.jpg"
+                                    onclick="currentSlide(9)"
+                                    alt="9"
+                                />
+                            </div>
+                            <div class="column">
+                                <img
+                                    class="demo cursor"
+                                    src="images/img_10.jpg"
+                                    onclick="currentSlide(10)"
+                                    alt="10"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="./js/script.js"></script>
+    </body>
+
+</html>
