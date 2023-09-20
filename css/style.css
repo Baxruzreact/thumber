@@ -1,4 +1,5 @@
-* {
+*
+{
      padding: 0;
      margin: 0;
      box-sizing: border-box;
@@ -6,12 +7,14 @@
      list-style-type: none;
 }
 
-body {
+body
+{
      min-width: 50vw;
      background: #000;
 }
 
-.global {
+.global
+{
      width: 100vw;
      overflow: hidden;
      height: 100vh;
@@ -20,44 +23,16 @@ body {
           'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-.header {
+.header
+{
      width: 100%;
      background: #000;
      position: fixed;
      z-index: 72px;
-     /* -webkit-animation-name: testing; */
-
 }
 
-
-
-/* 
-0 @-webkit-keyframes zooming {
-     from {
-          -webkit-transform: scale(1);
-     }
-
-     to {
-          -webkit-transform: scale(0);
-     }
-} */
-
-
-
-/* 
-@-webkit-keyframes testing {
-     from {
-          -webkit-transform: scale(0);
-     }
-
-     to {
-          -webkit-transform: scale(1);
-     }
-} */
-
-
-
-.header header nav ul {
+.header header nav ul
+{
      display: flex;
      justify-content: space-between;
      align-content: center;
@@ -67,44 +42,39 @@ body {
      height: 72px;
 }
 
-.header header nav ul li {
+.header header nav ul li
+{
      padding: 0 30px;
-     animation-name: ts;
+     animation-name: headeran;
      animation-duration: 0.6s;
 }
 
-/* 
-@keyframes testing {
-     from {
-          transform: translateY (0);
-     }
-
-     to {
-          transform: translateY (20%);
-     }
-} */
-
-.header header nav ul li a {
+.header header nav ul li a
+{
      color: white;
      text-transform: uppercase;
 }
 
-.logo a {
+.logo a
+{
      font-weight: bold;
      font-size: 20px;
 }
 
-.menu a {
+.menu a
+{
      margin-left: 0;
      font-size: 15px;
      font-weight: 400;
 }
 
-main {
+main
+{
      padding-top: 70px;
 }
 
-.graybg {
+.graybg
+{
      display: none;
      width: 100vw;
      height: 100vh;
@@ -113,7 +83,8 @@ main {
      z-index: 2;
 }
 
-.mymenubar {
+.mymenubar
+{
      display: none;
      position: fixed;
      z-index: 3;
@@ -125,7 +96,8 @@ main {
      width: 0;
 }
 
-.mymenubar ul li a {
+.mymenubar ul li a
+{
      padding: 8px 8px 8px 32px;
      text-decoration: none;
      font-size: 25px;
@@ -133,7 +105,8 @@ main {
      color: black;
 }
 
-.close a {
+.close a
+{
      position: absolute;
      top: 0;
      right: 25px;
@@ -141,36 +114,35 @@ main {
      margin-left: 50px;
 }
 
-.container {
+.container
+{
      position: relative;
 }
 
-.slidercont {
+.slidercont
+{
      height: 78vh;
      position: relative;
 }
 
-.my-slides {
+.my-slides
+{
      display: none;
 }
 
-/* 
-.my-slides img {
-     -webkit-animation-name: zooming;
-     -webkit-animation-duration: 0.6s;
-     animation-name: zoom;
-     animation-duration: 0.6s;
-} */
-
-img {
+.my-slides img
+{
      height: 78vh;
      width: 100%;
      object-fit: cover;
      object-position: center;
+     animation-name: zoom;
+     animation-duration: 0.4s;
 }
 
 .prev,
-.next {
+.next
+{
      cursor: pointer;
      position: absolute;
      top: 50%;
@@ -183,27 +155,31 @@ img {
      font-size: 50px;
 }
 
-.next {
+.next
+{
      right: 0;
 }
 
-.row {
+.row
+{
      position: relative;
-     overflow-y: auto;
+     overflow-y: scroll;
      height: 10vh;
+     white-space: nowrap;
+     overflow-x: hidden;
 }
 
-.row:after {
-     clear: both;
-}
-
-.column {
+.column
+{
      display: inline-block;
-     width: 12%;
+     width: 10%;
      margin: 0;
 }
 
-.column img {
+.column img
+{
+     animation-name: zoom;
+     animation-duration: 0.6s;
      margin: 2.5px 0;
      height: 10vh;
      width: 100%;
@@ -211,33 +187,26 @@ img {
      object-position: center;
 }
 
-@keyframes zooming {
-     from {
-          transform: scale(2);
-     }
-
-     to {
-          transform: scale(1);
-     }
-}
-
-
-.demo {
+.demo
+{
      opacity: 0.6;
 }
 
 .active,
-.demo:hover {
+.demo:hover
+{
      opacity: 1;
      border: 2px solid rgb(255, 0, 255);
 }
 
-.row::-webkit-scrollbar {
+.row::-webkit-scrollbar
+{
      display: none;
 }
 
 .info,
-.zoom {
+.zoom
+{
      background: white;
      color: rgba(0, 0, 0, 0.712);
      width: 60px;
@@ -252,23 +221,27 @@ img {
      text-align: center;
 }
 
-.zoom {
+.zoom
+{
      right: 0;
 }
 
-#myImg {
+#myImg
+{
      border-radius: 5px;
      cursor: pointer;
      transition: 0.3s;
      position: relative;
-     z-index: 5
+     z-index: 5;
 }
 
-#myImg:hover {
+#myImg:hover
+{
      opacity: 0.7;
 }
 
-.modal {
+.modal
+{
      display: none;
      position: fixed;
      z-index: 4;
@@ -280,14 +253,16 @@ img {
      overflow: auto;
 }
 
-.modal-content {
+.modal-content
+{
      margin: auto;
      display: block;
      width: 80%;
      max-width: 700px;
 }
 
-#caption {
+#caption
+{
      margin: auto;
      display: block;
      width: 80%;
@@ -299,46 +274,14 @@ img {
 }
 
 .modal-content,
-#caption {
-     -webkit-animation-name: zoom;
-     -webkit-animation-duration: 0.6s;
+#caption
+{
      animation-name: zoom;
      animation-duration: 0.6s;
 }
 
-@-webkit-keyframes zoom {
-     from {
-          -webkit-transform: scale(0);
-     }
-
-     to {
-          -webkit-transform: scale(1);
-     }
-}
-
-@keyframes zoom {
-     from {
-          transform: scale(0);
-     }
-
-     to {
-          transform: scale(1);
-     }
-}
-
-@keyframes ts {
-     from {
-          opacity: 1;
-          transform: translateY(-30px);
-     }
-
-     to {
-          opacity: 1;
-          transform: translate(0);
-     }
-}
-
-.close {
+.close
+{
      position: absolute;
      top: 15px;
      right: 35px;
@@ -349,15 +292,44 @@ img {
 }
 
 .close:hover,
-.close:focus {
+.close:focus
+{
      color: #bbb;
      text-decoration: none;
      cursor: pointer;
 }
 
-@media only screen and (max-width: 700px) {
-     .modal-content {
+@media only screen and (max-width: 700px)
+{
+     .modal-content
+     {
           width: 100%;
+     }
+}
+
+@keyframes zoom
+{
+     from
+     {
+          transform: scale(0);
+     }
+
+     to
+     {
+          transform: scale(1);
+     }
+}
+
+@keyframes headeran
+{
+     from
+     {
+          transform: translateY(-60px);
+     }
+
+     to
+     {
+          transform: translateY(0);
      }
 }
 

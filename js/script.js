@@ -1,21 +1,28 @@
-// @ts-nocheck
 let slideIndex = 1;
 let myindex = 1;
+
 document.querySelector( '.graybg' )?.addEventListener( 'click', closeNav );
 document.querySelector( '.menu' )?.addEventListener( 'click', onpenNav );
+// @ts-ignore
 document.querySelector( '.close' ).addEventListener( 'click', closeNav );
 
 function onpenNav ()
 {
+     // @ts-ignore
      document.querySelector( '.graybg' ).style.display = 'block';
+     // @ts-ignore
      document.querySelector( '.mymenubar' ).style.display = 'block';
+     // @ts-ignore
      document.querySelector( '.mymenubar' ).style.width = '300px';
 }
 
 function closeNav ()
 {
+     // @ts-ignore
      document.querySelector( '.mymenubar' ).style.display = 'none';
+     // @ts-ignore
      document.querySelector( '.mymenubar' ).style.width = '0';
+     // @ts-ignore
      document.querySelector( '.graybg' ).style.display = 'none';
 }
 showSlides( slideIndex );
@@ -46,6 +53,7 @@ function showSlides ( n )
 
      for ( i = 0; i < slides.length; i++ )
      {
+          // @ts-ignore
           slides[ i ].style.display = 'none';
      }
      for ( i = 0; i < dots.length; i++ )
@@ -54,7 +62,9 @@ function showSlides ( n )
      }
 
      dots[ slideIndex - 1 ].className += ' active';
+     // @ts-ignore
      slides[ slideIndex - 1 ].style.display = 'block';
+     // @ts-ignore
      zoom.addEventListener( 'click', () =>
      {
           let modal = document.getElementById( 'myModal' );
@@ -62,54 +72,81 @@ function showSlides ( n )
 
           let modalImg = document.getElementById( 'img01' );
           let captionText = document.getElementById( 'caption' );
+          // @ts-ignore
           document.querySelector( '.graybg' ).style.display = 'block';
+          // @ts-ignore
           modal.style.display = 'block';
+          // @ts-ignore
           modalImg.src = img.src;
+          // @ts-ignore
           captionText.innerHTML = img.alt;
           var span = document.getElementsByClassName( 'close' )[ 1 ];
+          // @ts-ignore
           modal.addEventListener( 'click', () =>
           {
+               // @ts-ignore
                modal.style.display = 'none';
+               // @ts-ignore
                document.querySelector( '.graybg' ).style.display = 'none';
           } );
+          // @ts-ignore
           span.onclick = function ()
           {
+               // @ts-ignore
                modal.style.display = 'none';
+               // @ts-ignore
                document.querySelector( '.graybg' ).style.display = 'none';
           };
 
+          // @ts-ignore
           document.querySelector( '.graybg' ).addEventListener( 'click', () =>
           {
+               // @ts-ignore
                modal.style.display = 'none';
+               // @ts-ignore
                document.querySelector( '.graybg' ).style.display = 'none';
           } );
      } );
      let img = document.querySelector( '.my-slides img' );
+     // @ts-ignore
      img.addEventListener( 'click', () =>
      {
           let modal = document.getElementById( 'myModal' );
           let img = document.querySelector( '.my-slides img' );
           let modalImg = document.getElementById( 'img01' );
           let captionText = document.getElementById( 'caption' );
+          // @ts-ignore
           document.querySelector( '.graybg' ).style.display = 'block';
+          // @ts-ignore
           modal.style.display = 'block';
+          // @ts-ignore
           modalImg.src = img.src;
+          // @ts-ignore
           captionText.innerHTML = img.alt;
           var span = document.getElementsByClassName( 'close' )[ 1 ];
 
+          // @ts-ignore
           modal.addEventListener( 'click', () =>
           {
+               // @ts-ignore
                modal.style.display = 'none';
+               // @ts-ignore
                document.querySelector( '.graybg' ).style.display = 'none';
           } );
+          // @ts-ignore
           span.onclick = function ()
           {
+               // @ts-ignore
                modal.style.display = 'none';
+               // @ts-ignore
                document.querySelector( '.graybg' ).style.display = 'none';
           };
+          // @ts-ignore
           document.querySelector( '.graybg' ).addEventListener( 'click', () =>
           {
+               // @ts-ignore
                modal.style.display = 'none';
+               // @ts-ignore
                document.querySelector( '.graybg' ).style.display = 'none';
           } );
      } );
