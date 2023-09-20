@@ -163,10 +163,10 @@ main
 .row
 {
      position: relative;
-     overflow-y: scroll;
+     /* overflow-y: scroll; */
      height: 10vh;
+     overflow: auto;
      white-space: nowrap;
-     overflow-x: hidden;
 }
 
 .column
