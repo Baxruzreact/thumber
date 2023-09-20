@@ -40,6 +40,7 @@ body
      flex-direction: row;
      flex-wrap: wrap;
      height: 72px;
+
 }
 
 .header header nav ul li
@@ -94,6 +95,8 @@ main
      height: 100%;
      padding-top: 50px;
      width: 0;
+     animation-name: menuans;
+     animation-duration: 0.8s;
 }
 
 .mymenubar ul li a
@@ -103,6 +106,8 @@ main
      font-size: 25px;
      display: block;
      color: black;
+     animation-name: menuan;
+     animation-duration: 0.8s;
 }
 
 .close a
@@ -330,6 +335,32 @@ main
      to
      {
           transform: translateY(0);
+     }
+}
+
+@keyframes menuan
+{
+     from
+     {
+          transform: translateY(-60px);
+     }
+
+     to
+     {
+          transform: translateY(0);
+     }
+}
+
+@keyframes menuans
+{
+     from
+     {
+          transform: translateX(-6px);
+     }
+
+     to
+     {
+          transform: translateX(0);
      }
 }
 
