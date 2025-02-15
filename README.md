@@ -14,4 +14,3 @@ Thumber is a web application designed to generate and manage image thumbnails ef
 - CSS
 - JavaScript
 
-## Installation
